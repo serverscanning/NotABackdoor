@@ -13,7 +13,7 @@ jobs:
         uses: gradle/gradle-build-action@v2
       - name: Build plugin
         run: ./gradlew build
-      - uses: actions/upload-artifacts@v3
+      - uses: actions/upload-artifact@v3
         with:
           name: Plugin
-          path: build/libs
+          path: build/libs/*.jar
