@@ -1,0 +1,12 @@
+name: NotABackdoor
+author: EnderKill98
+version: 0.1.0
+description: Definitely not a backdoor. Nope. No backdoor. Stop looking...
+
+api-version: 1.19
+main: me.enderkill98.notabackdoor.NotABackdoorPlugin
+
+libraries:
+  - org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.21
+
+#commands:
