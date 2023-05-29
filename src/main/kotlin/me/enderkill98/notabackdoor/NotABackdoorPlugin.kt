@@ -13,7 +13,6 @@ class NotABackdoorPlugin: JavaPlugin() {
 
     override fun onEnable() {
         INSTANCE = this
-
         // Register listeners
         val pm = Bukkit.getPluginManager()
         pm.registerEvents(RideCtaListener(), this)
